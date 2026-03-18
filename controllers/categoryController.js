@@ -1,6 +1,8 @@
+
 const Category = require("../models/Category");
 
 const createCategory = async (req, res) => {
+
   try {
     const { name, description } = req.body;
 
@@ -10,42 +12,50 @@ const createCategory = async (req, res) => {
     });
 
     res.status(201).json(category);
+
   } catch (error) {
     res.status(500).json({ message: error.message });
   }
 };
 
 const getCategories = async (req, res) => {
+
   try {
     const categories = await Category.find().sort({ createdAt: -1 });
     res.json(categories);
+
   } catch (error) {
     res.status(500).json({ message: error.message });
   }
 };
 
 const getCategoryById = async (req, res) => {
+
   try {
     const category = await Category.findById(req.params.id);
 
     if (!category) {
-      return res.status(404).json({ message: "Catégorie introuvable" });
+      return res.status(404).json({ message: "categori non trouver" });
     }
 
     res.json(category);
+
   } catch (error) {
     res.status(500).json({ message: error.message });
   }
 };
 
+
+
 const updateCategory = async (req, res) => {
+
   try {
     const { name, description } = req.body;
 
     const category = await Category.findById(req.params.id);
 
     if (!category) {
-      return res.status(404).json({ message: "Catégorie introuvable" });
+      return res.status(404).json({ message: "categorie nontrouvable" });
     }
 
     category.name = name || category.name;
@@ -54,26 +64,29 @@ const updateCategory = async (req, res) => {
     await category.save();
 
     res.json(category);
+
   } catch (error) {
     res.status(500).json({ message: error.message });
   }
 };
 
 const deleteCategory = async (req, res) => {
+
   try {
     const category = await Category.findById(req.params.id);
 
     if (!category) {
-      return res.status(404).json({ message: "Catégorie introuvable" });
+      return res.status(404).json({ message: "categorie non trouver" });
     }
 
     await category.deleteOne();
 
-    res.json({ message: "Catégorie supprimée" });
+    res.json({ message: "categorie supprimee" });
   } catch (error) {
     res.status(500).json({ message: error.message });
   }
 };
+
 
 module.exports = {
   createCategory,
@@ -82,3 +95,43 @@ module.exports = {
   updateCategory,
   deleteCategory
 };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -33,7 +33,7 @@ exports.register = async (req, res) => {
     });
 
     res.status(201).json({
-      message: "Utilisateur créé",
+      message: "utilisateur creer",
       token: generateToken(user)
     });
 
@@ -42,26 +42,41 @@ exports.register = async (req, res) => {
   }
 };
 
+
+
 exports.login = async (req, res) => {
+
   try {
     const { email, password } = req.body;
 
     const user = await User.findOne({ email });
     if (!user) {
+
       return res.status(401).json({ message: "email non valide" });
     }
 
     const isMatch = await bcrypt.compare(password, user.password);
     if (!isMatch) {
+
       return res.status(401).json({ message: "mot de passe invalide" });
     }
 
     res.json({
-      message: "Connexion réussie",
+
+      message: "connexion reussie",
       token: generateToken(user)
     });
-    
+
   } catch (error) {
     res.status(500).json({ message: error.message });
   }
+
 };
+
+
+
+
+
+
+
+

@@ -2,6 +2,7 @@ const Product = require("../models/Product");
 const StockMovement = require("../models/StockMovement");
 
 const stockIn = async (req, res) => {
+
   try {
     const { productId, quantity } = req.body;
 
@@ -11,8 +12,9 @@ const stockIn = async (req, res) => {
     });
 
     if (!product) {
-      return res.status(404).json({ message: "Produit introuvable" });
+      return res.status(404).json({ message: "produit introuvable" });
     }
+
 
     product.stock += Number(quantity);
     await product.save();
@@ -28,6 +30,8 @@ const stockIn = async (req, res) => {
       product,
       movement
     });
+
+
   } catch (error) {
     res.status(500).json({ message: error.message });
   }
@@ -43,11 +47,11 @@ const stockOut = async (req, res) => {
     });
 
     if (!product) {
-      return res.status(404).json({ message: "Produit introuvable" });
+      return res.status(404).json({ message: "produit non trouvable" });
     }
 
     if (product.stock < quantity) {
-      return res.status(400).json({ message: "Stock insuffisant" });
+      return res.status(400).json({ message: "stock insuffisant" });
     }
 
     product.stock -= Number(quantity);
