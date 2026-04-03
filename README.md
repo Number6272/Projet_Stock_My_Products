@@ -20,7 +20,7 @@
 ## Architecture du projet
 
 ```
-STOCKMYPRODUCTS
+STOCKMYPRODUCTS/
 │
 ├── config/
 │   └── db.js
@@ -30,6 +30,12 @@ STOCKMYPRODUCTS
 │   ├── categoryController.js
 │   ├── productController.js
 │   └── stockController.js
+│
+├── database_bdd/
+│   ├── stockmyproducts.categories.bdd.json
+│   ├── stockmyproducts.products.bdd.json
+│   ├── stockmyproducts.stockmovements.bdd.json
+│   └── stockmyproducts.users.bdd.json
 │
 ├── middlewares/
 │   ├── authMiddleware.js
@@ -42,6 +48,8 @@ STOCKMYPRODUCTS
 │   ├── StockMovement.js
 │   └── User.js
 │
+├── node_modules/
+│
 ├── routes/
 │   ├── authRoutes.js
 │   ├── categoryRoutes.js
@@ -49,10 +57,11 @@ STOCKMYPRODUCTS
 │   └── stockRoutes.js
 │
 ├── .env
-├── package.json
 ├── package-lock.json
+├── package.json
 ├── README.md
-└── server.js
+├── server.js
+└── stock_my_product.postman_collection.json
 ```
 
 ---
