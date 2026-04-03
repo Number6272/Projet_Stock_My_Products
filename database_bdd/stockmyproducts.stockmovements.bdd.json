@@ -1,0 +1,140 @@
+[{
+  "_id": {
+    "$oid": "69bb213fef932b55a8fe5c5b"
+  },
+  "product": {
+    "$oid": "69bb20ccef932b55a8fe5c56"
+  },
+  "type": "IN",
+  "quantity": 10,
+  "doneBy": {
+    "$oid": "69bb1c2fef932b55a8fe5c4d"
+  },
+  "createdAt": {
+    "$date": "2026-03-18T22:03:43.600Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-18T22:03:43.600Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69bb21d8ef932b55a8fe5c60"
+  },
+  "product": {
+    "$oid": "69bb20ccef932b55a8fe5c56"
+  },
+  "type": "OUT",
+  "quantity": 10,
+  "doneBy": {
+    "$oid": "69bb1c2fef932b55a8fe5c4d"
+  },
+  "createdAt": {
+    "$date": "2026-03-18T22:06:16.811Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-18T22:06:16.811Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69bb21e4ef932b55a8fe5c65"
+  },
+  "product": {
+    "$oid": "69bb20ccef932b55a8fe5c56"
+  },
+  "type": "IN",
+  "quantity": 10,
+  "doneBy": {
+    "$oid": "69bb1c2fef932b55a8fe5c4d"
+  },
+  "createdAt": {
+    "$date": "2026-03-18T22:06:28.357Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-18T22:06:28.357Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69bb21eeef932b55a8fe5c6a"
+  },
+  "product": {
+    "$oid": "69bb20ccef932b55a8fe5c56"
+  },
+  "type": "OUT",
+  "quantity": 3,
+  "doneBy": {
+    "$oid": "69bb1c2fef932b55a8fe5c4d"
+  },
+  "createdAt": {
+    "$date": "2026-03-18T22:06:38.872Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-18T22:06:38.872Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69bb21feef932b55a8fe5c71"
+  },
+  "product": {
+    "$oid": "69bb20ccef932b55a8fe5c56"
+  },
+  "type": "OUT",
+  "quantity": 1,
+  "doneBy": {
+    "$oid": "69bb1c2fef932b55a8fe5c4d"
+  },
+  "createdAt": {
+    "$date": "2026-03-18T22:06:54.820Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-18T22:06:54.820Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69bd60e33038b5535a9c6c2d"
+  },
+  "product": {
+    "$oid": "69bd609b3038b5535a9c6c28"
+  },
+  "type": "IN",
+  "quantity": 10,
+  "doneBy": {
+    "$oid": "69bd5fff3038b5535a9c6c1c"
+  },
+  "createdAt": {
+    "$date": "2026-03-20T14:59:47.436Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-20T14:59:47.436Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69bd61013038b5535a9c6c32"
+  },
+  "product": {
+    "$oid": "69bd609b3038b5535a9c6c28"
+  },
+  "type": "OUT",
+  "quantity": 1,
+  "doneBy": {
+    "$oid": "69bd5fff3038b5535a9c6c1c"
+  },
+  "createdAt": {
+    "$date": "2026-03-20T15:00:17.008Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-20T15:00:17.008Z"
+  },
+  "__v": 0
+}]

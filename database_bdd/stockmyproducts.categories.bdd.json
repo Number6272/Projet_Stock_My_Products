@@ -1,0 +1,56 @@
+[{
+  "_id": {
+    "$oid": "69b9e7903accb461299dc77a"
+  },
+  "name": "Électronique",
+  "description": "Téléphones, ordinateurs, accessoires",
+  "createdAt": {
+    "$date": "2026-03-17T23:45:20.304Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-17T23:45:20.304Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69bb1ddcef932b55a8fe5c51"
+  },
+  "name": "Informatique",
+  "description": "Produits tech",
+  "createdAt": {
+    "$date": "2026-03-18T21:49:16.561Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-18T21:49:16.561Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69bd59df3038b5535a9c6c04"
+  },
+  "name": "Informatiques",
+  "description": "Produits tech",
+  "createdAt": {
+    "$date": "2026-03-20T14:29:51.658Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-20T14:29:51.658Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69bd60633038b5535a9c6c24"
+  },
+  "name": "Informatiquess",
+  "description": "Produits tech",
+  "createdAt": {
+    "$date": "2026-03-20T14:57:39.425Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-20T14:57:39.425Z"
+  },
+  "__v": 0
+}]

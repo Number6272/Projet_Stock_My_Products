@@ -1,0 +1,40 @@
+[{
+  "_id": {
+    "$oid": "69bb20ccef932b55a8fe5c56"
+  },
+  "name": "Clavier mécanique pro",
+  "description": "RGB gaming",
+  "price": 15000,
+  "stock": 6,
+  "category": {
+    "$oid": "69bd59df3038b5535a9c6c04"
+  },
+  "isDeleted": true,
+  "createdAt": {
+    "$date": "2026-03-18T22:01:48.282Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-20T14:51:37.097Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69bd609b3038b5535a9c6c28"
+  },
+  "name": "Clavier mécanique pro plus",
+  "description": "RGB gaming",
+  "price": 15000,
+  "stock": 9,
+  "category": {
+    "$oid": "69bd60633038b5535a9c6c24"
+  },
+  "isDeleted": false,
+  "createdAt": {
+    "$date": "2026-03-20T14:58:35.842Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-20T15:02:15.210Z"
+  },
+  "__v": 0
+}]
